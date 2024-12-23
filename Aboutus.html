@@ -1,107 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Website About Us</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+      *{
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+      }
+      body{
+          font-family: 'Playfair Display', serif;
+          display: grid;
+          background-color: #f4f4f4;
+          align-content: center;
+          min-height: 100vh;
+      }
+      section{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          min-height: 90vh;
+          width: 85vw;
+          margin: 0 auto;
+      }
+      .image{
+          background: url("-kcnkzf-removebg-preview.png") center/cover no-repeat;
+      }
+      .content{
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+      }
+      .content h2{
+          text-transform: uppercase;
+          font-size: 36px;
+          letter-spacing: 6px;
+          opacity: 0.9;
+      }
+      .content span{
+          height: 0.5px;
+          width: 80px;
+          background: #777;
+          margin: 30px 0;
+      }
+      .content p{
+          padding-bottom: 15px;
+          font-weight: 300;
+          opacity: 0.7;
+          width: 60%;
+          text-align: center;
+          margin: 0 auto;
+          line-height: 1.7;
+      }
+      .links{
+          margin: 15px 0;
+      }
+      .links li{
+          border: 0.5px solid #777;
+          list-style: none;
+          border-radius: 5px;
+          padding: 10px 15px;
+          width: 160px;
+          text-align: center;
+      }
+      .links li a{
+          text-transform: uppercase;
+          color: #777;
+          text-decoration: none;
+      }
+      .links li:hover{
+          border-color: #7d2ae8;
+      }
+      .links li:hover a{
+          color :#7d2ae8;
+      }
+      .vertical-line{
+          height: 30px;
+          width: 0.5px;
+          background: #777;
+          margin: 0 auto;
+      }
+      .icons{
+          display: flex;
+          padding: 15px 0;
+      }
+      .icons li{
+          display: block;
+          padding: 5px;
+          margin: 5px;
+      }
+      .icons li i{
+          font-size: 26px;
+          opacity: 0.8;
+      }
+      .icons li i:hover{
+          color: #06d6a0;
+      }
+      
+      
+      /*****************/
+      
+      @media(max-width: 992px){
+          section{
+              grid-template-columns: 1fr;
+              width: 100%;
+          }
+          .image{
+              height: 100vh;
+          }
+          .content{
+              height: 100vh;
+          }
+          .content h2{
+              font-size: 20px;
+              margin-top: 50px;
+          }
+          .content span{
+              margin: 20px 0;
+          }
+          .content p{
+              font-size: 14px;
+          }
+          .links li a{
+              font-size: 14px;
+          }
+          .links{
+              margin: 5px 0;
+          }
+          .links li{
+              padding: 6px 10px;
+          }
+          .icons li i{
+              font-size: 15px;
+          }
+      }</style>
+    <body>
+        <section>
+            <div class = "image">
+            </div>
 
-.about-us {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  padding: 90px 0;
-  background: #fff;
-}
+            <div class = "content">
+                <h2 style=" color: #7d2ae8;">About Us</h2>
+                <span></span>
 
-.pic {
-  height: auto;
-  width: 400px;
-  border-radius: 12px;
-}
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
 
-.about {
-  width: 1130px;
-  max-width: 85%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+                <ul class = "links">
+                    <li><a href = "#">work</a></li>
 
-.text {
-  width: 540px;
-}
+                    <div class = "vertical-line"></div>
 
-.text h2 {
-  color: #333;
-  font-size: 90px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+                    <li><a href = "#">service</a></li>
 
-.text h5 {
-  color: #333;
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
+                    <div class = "vertical-line"></div>
+                    
+                    <li><a href = "#">contact</a></li>
+                </ul>
 
-span {
-  color: #7d2ae8;
-}
-
-.text p {
-  color: #333;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 1px;
-}
-
-.data {
-  margin-top: 30px;
-}
-
-.hire {
-  font-size: 18px;
-  background: #7d2ae8;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
-  transition: 0.5s;
-}
-
-.hire:hover {
-  background: #000;
-}
-  </style>
-  <body>
-    <section class="about-us">
-      <div class="about">
-        <img src="-kcnkzf-removebg-preview.png" class="pic" />
-        <div class="text">
-          <h2>About Us</h2>
-          <h5>Front-end Developer & <span>Designer</span></h5>
-          <p>Welcome to my portfolio! I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating clean, responsive, and user-friendly websites that bring ideas to life. With a strong foundation in modern web technologies, I aim to craft seamless digital experiences that make an impact. Let’s build something amazing together!</p>
-          <div class="data">
-            <a href="#" class="hire">Hire Me</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+                <ul class = "icons">
+                    <li>
+                        <i class = "fa fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-facebook"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-github"></i>
+                    </li>
+                    <li>
+                        <i class = "fa fa-pinterest"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </body>
 </html>
